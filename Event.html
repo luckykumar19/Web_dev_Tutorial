@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        padding:10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    </style>
+<body>
+    <div class="container">
+        <h1>This is my heading </h1>
+        <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsa nesciunt debitis minima dolorum, libero blanditiis nemo saepe facere temporibus laborum, culpa ab nisi odio quos assumenda fugit perferendis cumque voluptatem! Dicta mollitia odit culpa excepturi vero, qui repellendus hic sunt, sed quam quia in omnis saepe eaque neque aperiam suscipit vel! Accusantium quas facere commodi in quos autem id. Sint molestiae beatae ea!
+        </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+    <script>
+        let para = document.getElementById('para');
+
+
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para= document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
